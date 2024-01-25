@@ -1,6 +1,6 @@
 Learning WASM with C
 
-Compile: 'go build -C src -o main && ./src/main && emcc src/main.c -o dist/main.js -s WASM=1'
+Compile: 'go build -C src/go -o main && ./src/go/main && emcc src/c/main.c -o dist/main.js -s WASM=1'
 
 I suggest running 'emsdk activate latest && emsdk_env.bat' whenever beginning development in a fresh terminal instance
 
