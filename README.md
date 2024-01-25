@@ -4,7 +4,7 @@ Must use 'EMSCRIPTEN_KEEPALIVE' so emcc can tell what functions are being used i
 
 Compile and host (compiles Go server first, then transpiles C to WASM, then starts Go server):
   go build -C src/go -o main &&
-  emcc src/c/main.c -o dist/main.js -s NO_EXIT_RUNTIME=1 -s EXPORTED_RUNTIME_METHODS=[ccall] -s FORCE_FILESYSTEM -s WASM=1 &&
+  emcc src/c/main.c -o dist/main.js -s NO_EXIT_RUNTIME=1 -s EXPORTED_RUNTIME_METHODS=ccall,cwrap -s FORCE_FILESYSTEM -s WASM=1 &&
   ./src/go/main
 
 I suggest running 'emsdk activate latest && emsdk_env.bat' whenever beginning development in a fresh terminal instance
