@@ -1,4 +1,4 @@
-dist/a.out.js
-dist/a.out.wasm
+dist/main.js
+dist/main.wasm
 src/go/main
 src/go/main.exe
