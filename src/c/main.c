@@ -6,6 +6,7 @@ int addNums(int a, int b) {
   return a + b;
 }
 
+EMSCRIPTEN_KEEPALIVE
 int main() {
   int num_a = 3;
   int num_b = 5;
