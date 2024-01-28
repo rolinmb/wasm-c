@@ -29,6 +29,6 @@ function run_wasm() {
     ).then(results => {
         var n = document.getElementById("num-n").value;
         var sum = results.instance.exports.sumOfNInts(n);
-        document.getElementById("val-out").innerHTML = sum;
+        document.getElementById("val-out").innerHTML = "sumOfNInts("+ n + ") = " + sum;
     });
 }
