@@ -13,5 +13,5 @@ int accumulate(int *arr, int n) {
 
 EMSCRIPTEN_KEEPALIVE
 const char *getString() {
-  return "Hello, world!";
+  return "Hello wasm, this is C from emcc!";
 }
