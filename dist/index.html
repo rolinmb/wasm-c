@@ -8,12 +8,17 @@
   <body>
     <p>Welcome to index.html, hosted from src/go/main.go</p>
     <script src="driver.js"></script>
-    <label>
+    <!-- <label>
       a = <input id="num-a" type="number">
     </label>
     <label>
       b = <input id="num-b" type="number">
     </label>
-    <button onclick="run_wasm()">Call addNum(a, b) from WASM</button>
+    <button onclick="run_wasm()">Call addNum(a, b) from WASM</button> -->
+    <label>
+      a = <input id="num-n" type="number">
+    </label>
+    <button onclick="run_wasm()">Call sumOfNInts(n) from WASM</button>
+    <p id="val-out"></p>
   </body>
 </html>
